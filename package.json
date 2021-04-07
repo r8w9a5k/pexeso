@@ -14,9 +14,9 @@
   "author": "DonDejvo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DonDejvo/pexeso/issues"
+    "url": "https://github.com/r8w9a5k/pexeso/issues"
   },
-  "homepage": "https://github.com/DonDejvo/pexeso#readme",
+  "homepage": "https://github.com/r8w9a5k/pexeso/#readme",
   "dependencies": {
     "express": "^4.17.1",
     "serve-favicon": "^2.5.0",
