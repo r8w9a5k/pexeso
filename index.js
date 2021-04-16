@@ -140,9 +140,10 @@ io.on('connection', (socket) => {
         }
 
         roomState.timer = 0;
-        roomState.state = STATE.SHOWING;
+        
         if(!success) {
           roomState.last = socket.number;
+          roomState.state = STATE.SHOWING;
         }
       } catch(e) {
 
