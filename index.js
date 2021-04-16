@@ -22,7 +22,7 @@ const STATE = {
   SHOWING: 3,
   NO_GAME: 4
 };
-const MOVE_TIME = 10;
+const MOVE_TIME = 15;
 const SHOW_TIME = 2;
 
 const state = {};
