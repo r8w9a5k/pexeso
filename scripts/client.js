@@ -9,9 +9,9 @@ const show = (html_elem, value = "block") => { html_elem.style.display = value; 
 
 
 const BOARD_SIZE = 36;
-const MOVE_TIME = 10;
+const MOVE_TIME = 15;
 const SHOW_TIME = 2;
-const EMOJI = ["🐶","🐱","🐭","🐹","🐰","🦊","🐻","🐼","🐨","🐯","🦁","🐮","🐷","🐸","🐵","🐥","🦉","🐺"];
+const EMOJI = ["🍌","🍇","🍓","🍒","🍎","🥝","🍍","🥥","🍆","🥑","🌶","🌽","🥕","🧄","🧅","🥒","🥬","🍅"];
 const STATES = {
 	0: "not started",
 	1: "your turn",
@@ -119,17 +119,16 @@ function createBoard() {
 }
 
 function createEvents() {
-	if (window.PointerEvent) {                                  /* decent browsers */
+	if (window.PointerEvent) { /* decent browsers */
     	addEventListener('pointerdown', handleClick);
 	}
-	else if (window.TouchEvent) {                               /* mobile Safari */
+	else if (window.TouchEvent) { /* mobile Safari */
     	addEventListener('touchstart', handleClick);
 	}
-	else {                                                      /* desktop Safari */
+	else { /* desktop Safari */
     	etouch.addEventListener('mousedown', handleClick);
 	}
-	
-	//addEventListener('touchstart', handleClick);
+
 	addEventListener('gesturestart', e => {
     		e.preventDefault();
   	});
@@ -139,7 +138,6 @@ function createEvents() {
     		}
   	}, {passive: false});
 	
-	//addEventListener('touchstart', preventZoom); 
 }
 
 function handleClick(e) {
