@@ -1,58 +1,63 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="assets/css.css">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');</style> 
-    <title>pexeso</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="assets/css.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');</style>
+  <title>pexeso</title>
 </head>
-	
+
 <body>
-    
-    <div id="intro" class="container">
-        <div class="loader"></div>
-    </div>
 
-    <div id="menu" class="container">
-        <h1 class="menu-title">pexeso</h1>
-        <div class="menu">
-            <button class="button-normal" id="create-btn" onclick="createGame()">create game</button>
-            <div style="margin-top: 36px;">
-                <input placeholder="game code" class="input-code" id="code-input" type="text">
-                <br>
-                <button style="margin-top: 12px;" class="button-normal" id="join-btn" onclick="joinGame()">join game</button>
-            </div>
-        </div>
-        <div class="footer">
-            <a href="https://github.com/r8w9a5k/pexeso/">github</a>
-        </div>
-    </div>
+<div id="intro" class="container">
+  <div class="loader"></div>
+</div>
 
-    <div id="game" class="container">
-        <h1 class="game-title">pexeso</h1>
-        <div class="header">
-            <div id="status">
-                not started
-            </div>
-            <div id="gamecode">
-                code: -
-            </div>
-        </div>
-        <div id="board" class="board"></div>
-        <div class="players">
-            <div id="playerYou">
-                <h2>you</h2>
-                <p>score: 0</p>
-            </div>
-            <div id="playerOpponent">
-                <h2>opponent</h2>
-                <p>score: 0</p>
-            </div>
-        </div>
+<div id="menu" class="container">
+  <div class="menu">
+    <h1 class="menu-title">pexeso</h1>
+    <button class="button-normal" id="create-btn" onclick="createGame()">create game</button>
+    <div style="margin-top: 36px;">
+      <input placeholder="game code" class="input-code" id="code-input" type="text">
+      <br>
+      <button style="margin-top: 12px;" class="button-normal modifier" id="join-btn" onclick="joinGame()">join game</button>
     </div>
+  </div>
+  <div class="footer">
+    <a href="https://github.com/r8w9a5k/pexeso/">
+      <svg width="48" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>GitHub icon</title>
+        <path fill="#ffffff" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+      </svg>
+    </a>
+  </div>
+</div>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="scripts/client.js"></script>
+<div id="game" class="container">
+  <h1 class="game-title">pexeso</h1>
+  <div class="header">
+    <div id="status">
+      not started
+    </div>
+    <div id="gamecode">
+      code: -
+    </div>
+  </div>
+  <div id="board" class="board"></div>
+  <div class="players">
+    <div id="playerYou">
+      <h2>you</h2>
+      <p>score: 0</p>
+    </div>
+    <div id="playerOpponent">
+      <h2>opponent</h2>
+      <p>score: 0</p>
+    </div>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="scripts/client.js"></script>
 </body>
 </html>
