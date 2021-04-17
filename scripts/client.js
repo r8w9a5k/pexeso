@@ -11,7 +11,7 @@ const show = (html_elem, value = "block") => { html_elem.style.display = value; 
 const BOARD_SIZE = 36;
 const MOVE_TIME = 15;
 const SHOW_TIME = 2;
-const EMOJI = ["🍌","🍇","🍓","🍒","🍎","🥝","🍍","🥥","🍆","🥑","🌶","🌽","🥕","🧄","🧅","🥒","🥬","🍅"];
+const EMOJI = ["🍌","🍇","🍓","🍒","🍎","🥝","🍍","🥥","🍆","🥑","🍊","🌽","🥕","🥜","🌰","🥒","🥬","🍅"];
 const STATES = {
 	0: "not started",
 	1: "your turn",
