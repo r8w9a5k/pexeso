@@ -85,12 +85,12 @@ function handleGameState(data) {
 	id("status").innerHTML = status;
 	
 	if(id("status").innerHTML.indexOf("your") !== -1) {
-		id("playerYou").style.backgroundColor = 'pink';
-		id("playerOpponent").style.backgroundColor = '#fff';
+		id("playerYou").style.backgroundColor = '#4ff7b2';
+		id("playerOpponent").style.backgroundColor = 'transparent';
 	}
 	if(id("status").innerHTML.indexOf("opponents") !== -1) {
-		id("playerYou").style.backgroundColor = '#fff';
-		id("playerOpponent").style.backgroundColor = 'pink';
+		id("playerYou").style.backgroundColor = 'transparent';
+		id("playerOpponent").style.backgroundColor = '#4ff7b2';
 	}
 
 	id("playerYou").innerHTML = "<h2>you</h2>" + 
