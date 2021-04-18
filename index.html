@@ -19,7 +19,7 @@
     <h1 class="menu-title">pexeso</h1>
     <button class="button-normal" id="create-btn" onclick="createGame()">create game</button>
     <div style="margin-top: 36px;">
-      <input placeholder="game code" class="input-code" id="code-input" type="text">
+      <input oninput="this.value = this.value.toLowerCase()" placeholder="game code" class="input-code" id="code-input" type="text">
       <br>
       <button style="margin-top: 12px;" class="button-normal modifier" id="join-btn" onclick="joinGame()">join game</button>
     </div>
@@ -35,6 +35,7 @@
 </div>
 
 <div id="game" class="container">
+  <div>
   <h1 class="game-title">pexeso</h1>
   <div class="header">
     <div id="status">
