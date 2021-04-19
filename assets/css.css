@@ -99,10 +99,10 @@ body {
 
 .game-title {
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 32px;
   color: #ffffff;
   font-family: secret-medium, sans-serif;
-  margin: 32px 0;
+  padding: 24px 0;
 }
 
 .header {
