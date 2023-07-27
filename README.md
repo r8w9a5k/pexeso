@@ -1,6 +1,8 @@
 # pexeso is a memory game or pairs game
 
-# multiplayer runs online at https://pexeso.onrender.com
+# this game is multiplayer and runs online at https://pexeso.onrender.com
+
+# create game and send room code to a friend so he can join
 
 
 ![obrazek](https://github.com/r8w9a5k/pexeso/assets/28980824/4d39884f-78aa-49bd-ab6a-80e2259d4975)
